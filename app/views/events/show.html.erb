@@ -1,0 +1,13 @@
+<p>
+  <strong>Definition:</strong>
+  <%= @event.definition %>
+</p>
+ 
+<p>
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %> | 
+<%= link_to 'Main page', welcome_index_path %>

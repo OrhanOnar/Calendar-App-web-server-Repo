@@ -1,0 +1,6 @@
+<h1>Welcome to Calendar!</h1>
+<%= link_to 'Your Events', controller: 'events' %> <br><br>
+
+<%= month_calendar do |date| %>
+  <% link_to date , new_event_path %>
+<% end %>
